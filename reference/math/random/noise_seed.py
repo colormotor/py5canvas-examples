@@ -1,4 +1,4 @@
-from p5 import *
+from py5canvas import *
 
 xoff = 0
 

@@ -7,7 +7,7 @@
 # (numbers between 0 and 360) are scaled to new numbers to define the
 # color and size of a circle.
 
-from p5 import *
+from py5canvas import *
 
 def setup():
     size(640, 360)

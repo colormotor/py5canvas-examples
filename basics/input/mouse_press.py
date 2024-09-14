@@ -4,7 +4,7 @@
 # Move the mouse to position the shape. Press the mouse button to
 # invert the color.
 
-from p5 import *
+from py5canvas import *
 
 def setup():
     size(640, 360)

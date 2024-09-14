@@ -7,7 +7,7 @@
 # cursor vertically over each bar to alter its saturation.
 #
 
-from p5 import *
+from py5canvas import *
 
 bar_width = 20
 last_bar = None

@@ -7,7 +7,7 @@
 # of the curve.
 #
 
-from p5 import *
+from py5canvas import *
 
 def setup():
     size(640, 360)
@@ -19,8 +19,10 @@ def draw():
     control_1 = (410, 20)
     control_2 = (440, 300)
     for i in range(0, 200, 20):
+
         start_point = (mouse_x - (i / 2.0), 40 + i)
         end_point = (240 - (i / 26), 300 + (i / 8))
         bezier(start_point, control_1, control_2, end_point)
 
-run()
+if __name__ == '__main__':
+    run()

@@ -2,7 +2,7 @@
 #
 # Using 1D Perlin Noise to assign location.
 
-from p5 import *
+from py5canvas import *
 
 xoff = 0
 xincrement = 0.01

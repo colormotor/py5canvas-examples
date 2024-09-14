@@ -3,7 +3,7 @@
 #
 # Move the mouse across the screen to move the circle. THe program
 # constrains the circle to its box.
-from p5 import *
+from py5canvas import *
 
 easing = 0.05
 radius = 24
@@ -21,14 +21,14 @@ def setup():
 def draw():
     background(51)
 
-    if abs(mouse_x - m.x) > 0.1:
-        m.x = m.x + (mouse_x - m.x) * easing
+    if abs(mouse_x - m[0]) > 0.1:
+        m[0] = m[0] + (mouse_x - m[0]) * easing
 
-    if abs(mouse_y - m.y) > 0.1:
-        m.y = m.y + (mouse_y - m.y) * easing
+    if abs(mouse_y - m[1]) > 0.1:
+        m[1] = m[1] + (mouse_y - m[1]) * easing
 
-    m.x = constrain(m.x, inner, width - inner)
-    m.y = constrain(m.y, inner, height - inner)
+    m[0] = constrain(m[0], inner, width - inner)
+    m[1] = constrain(m[1], inner, height - inner)
 
     fill(76)
     rect((edge, edge), (width - edge, height - edge))

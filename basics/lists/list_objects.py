@@ -3,7 +3,7 @@
 # Demonstrated the syntax for creating a list of custom objects.
 #
 
-from p5 import *
+from py5canvas import *
 
 unit = 40
 modules = []

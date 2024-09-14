@@ -5,7 +5,7 @@
 # signal from mouse_x, the middle row is the signal from mouse_y and
 # the bottom row is the signal from mouse_is_pressed.
 
-from p5 import *
+from py5canvas import *
 
 xvals = []
 yvals = []

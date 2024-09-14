@@ -1,4 +1,4 @@
-from p5 import *
+from py5canvas import *
 
 img = load_image('../wave-512.png')
 

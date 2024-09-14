@@ -7,7 +7,7 @@
 # Using two random() calls and the point() function to create an
 # irregular sawtooth line.
 
-from p5 import *
+from py5canvas import *
 
 total_points = 300
 steps = total_points + 1

@@ -5,7 +5,7 @@
 # function computes the angle from each eye to the cursor.
 #
 
-from p5 import *
+from py5canvas import *
 
 eyes = []
 

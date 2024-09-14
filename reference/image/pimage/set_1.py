@@ -1,4 +1,4 @@
-from p5 import *
+from py5canvas import *
 
 soyuz = load_image('../soyuz-256.jpg')
 

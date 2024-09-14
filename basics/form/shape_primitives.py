@@ -6,7 +6,7 @@
 # number of parametes to determine the shpae's position and size.
 #
 
-from p5 import *
+from py5canvas import *
 
 def setup():
     size(640, 360)

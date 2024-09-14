@@ -8,7 +8,7 @@
 # - Press <DOWN> to decrease the number of colored bands
 #
 
-from p5 import *
+from py5canvas import *
 
 start_color = Color(255)
 end_color = Color(0)

@@ -1,4 +1,4 @@
-from p5 import *
+from py5canvas import *
 
 img1 = load_image('../raspberries-256.jpg')
 img2 = load_image('../raspberries-256.jpg')

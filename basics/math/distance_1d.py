@@ -4,7 +4,7 @@
 # Move the mouse left or right to control the speed and direction of
 # the moving shapes.
 
-from p5 import *
+from py5canvas import *
 
 xpos = []
 

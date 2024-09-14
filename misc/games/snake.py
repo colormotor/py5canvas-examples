@@ -4,7 +4,7 @@
 #   - Arrow keys start the game and control the snake.
 #   - Spacebar pauses the game.
 
-from p5 import *
+from py5canvas import *
 
 tiles = 25
 tile_size = 25

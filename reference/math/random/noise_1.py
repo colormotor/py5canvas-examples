@@ -1,4 +1,4 @@
-from p5 import *
+from py5canvas import *
 
 xoff = 0
 
@@ -9,4 +9,5 @@ def draw():
     n = noise(xoff) * width
     line((n, 0), (n, height))
 
-run()
+if __name__=='__main__':
+    run(frame_rate=30)

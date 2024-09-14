@@ -4,7 +4,7 @@
 # Uses the art() function to generate a pie chart from teh data stored
 # in a list.
 #
-from p5 import *
+from py5canvas import *
 
 angles = [30, 10, 45, 35, 60, 38, 75, 67]
 

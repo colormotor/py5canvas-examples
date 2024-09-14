@@ -5,7 +5,7 @@
 # variable is used to control both the size and color of the
 # rectangles.
 
-from p5 import *
+from py5canvas import *
 
 def setup():
     size(640, 360)

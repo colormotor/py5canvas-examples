@@ -1,4 +1,4 @@
-from p5 import *
+from py5canvas import *
 
 img1 = load_image('../src/luminale-512.jpg')
 img2 = load_image('../src/grand-theatre-512.jpg')

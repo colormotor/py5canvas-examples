@@ -5,7 +5,7 @@
 # block. It continues to do this until the variable "level" is equal
 # to 1.
 
-from p5 import *
+from py5canvas import *
 
 def setup():
     size(640, 360)

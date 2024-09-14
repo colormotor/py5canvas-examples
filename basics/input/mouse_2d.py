@@ -3,7 +3,7 @@
 #
 # Moving the mouse changes the position and size of each box.
 #
-from p5 import *
+from py5canvas import *
 
 def setup():
     size(640, 360)

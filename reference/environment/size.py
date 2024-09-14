@@ -1,4 +1,4 @@
-from p5 import *
+from py5canvas import *
 
 def setup():
     size(320, 240)

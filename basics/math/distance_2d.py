@@ -6,7 +6,7 @@
 # size proportionally.
 #
 
-from p5 import *
+from py5canvas import *
 
 max_distance = 0
 

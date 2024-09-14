@@ -7,7 +7,7 @@
 # hue.
 #
 
-from p5 import *
+from py5canvas import *
 
 bar_width = 20
 last_bar = None

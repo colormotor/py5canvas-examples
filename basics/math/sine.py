@@ -3,7 +3,7 @@
 #
 # Smoothly scaling size with the sin() function.
 
-from p5 import *
+from py5canvas import *
 
 diameter = None
 angle = 0

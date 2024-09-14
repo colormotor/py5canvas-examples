@@ -5,7 +5,7 @@
 # are useful for storing images. In this example, each square is
 # colored in relation to its distance from the center of the image.
 
-from p5 import *
+from py5canvas import *
 
 colors = []
 spacer = 20

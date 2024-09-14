@@ -3,7 +3,7 @@
 #
 # Click on the box and drag it across the screen.
 #
-from p5 import *
+from py5canvas import *
 
 box_position = Vector(0, 0)
 box_size = 75
@@ -14,8 +14,8 @@ offset = Vector(0, 0)
 def setup():
     size(640, 360)
     title("Mouse Functions")
-    box_position.x = width / 2
-    box_position.y = height / 2
+    box_position[0] = width / 2
+    box_position[1] = height / 2
     rect_mode('RADIUS')
 
 def draw():
@@ -23,10 +23,10 @@ def draw():
     background(0)
 
     # Test if the cursor is over the box
-    mouse_x_in_box = (mouse_x > box_position.x - box_size) and \
-                     (mouse_x < box_position.x + box_size)
-    mouse_y_in_box = (mouse_y > box_position.y - box_size) and \
-                     (mouse_y < box_position.y + box_size)
+    mouse_x_in_box = (mouse_x > box_position[0] - box_size) and \
+                     (mouse_x < box_position[0] + box_size)
+    mouse_y_in_box = (mouse_y > box_position[1] - box_size) and \
+                     (mouse_y < box_position[1] + box_size)
     over_box = mouse_x_in_box and mouse_y_in_box
 
     if over_box:

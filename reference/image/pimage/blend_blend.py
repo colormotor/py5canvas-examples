@@ -1,11 +1,10 @@
-from p5 import *
+from py5canvas import *
 
 img1 = load_image('../src/luminale-512.jpg')
 img2 = load_image('../src/grand-theatre-512.jpg')
 img3 = load_image('../src/luminale-512.jpg')
 
-img3.filter('opacity', 0.5)
-img3.blend(img2, 'blend')
+img3 = Image.blend(img2, img3, 0.5)
 
 def setup():
     size(img1.width, int(img1.height * 1.5))

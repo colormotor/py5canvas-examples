@@ -9,7 +9,7 @@
 # example, a list named "coswav" is created and filled with the cosine
 # values. This data is displayed three separate ways on the screen.
 
-from p5 import *
+from py5canvas import *
 
 coswave = []
 

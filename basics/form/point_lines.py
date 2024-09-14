@@ -6,7 +6,7 @@
 # the positions based on the value of 'd'
 #
 
-from p5 import *
+from py5canvas import *
 
 d = 70
 p1 = d

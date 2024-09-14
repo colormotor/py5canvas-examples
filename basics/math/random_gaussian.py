@@ -3,7 +3,7 @@
 # This sketch draws circles with x and y locations tied to a gaussian
 # distribution of random numbers.
 
-from p5 import *
+from py5canvas import *
 
 def setup():
     size(640, 360)

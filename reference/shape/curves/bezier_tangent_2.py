@@ -1,4 +1,4 @@
-from p5 import *
+from py5canvas import *
 
 start = (306, 72)
 control_1 = (36, 36)

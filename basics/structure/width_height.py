@@ -5,7 +5,7 @@
 # of the display window as defined in the size() function.
 #
 
-from p5 import *
+from py5canvas import *
 
 def setup():
     size(640, 360)

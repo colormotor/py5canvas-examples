@@ -1,10 +1,12 @@
 # Brightness is the relative lightness or darkness of a color. Move
 # the cursor vertically over each bar to alter it's brighness.
 
-from p5 import *
+from py5canvas import *
 
 bar_width = 20
 last_bar = None
+
+print("Loaded")
 
 def setup():
     size(640, 360)

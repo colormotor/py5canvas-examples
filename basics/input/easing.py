@@ -8,7 +8,7 @@
 # distance (0.05) from its current position toward the cursor.
 #
 
-from p5 import *
+from py5canvas import *
 
 position = Vector(0, 0)
 easing = 0.05
@@ -16,6 +16,7 @@ easing = 0.05
 def setup():
     size(640, 360)
     title("Easing")
+    frame_rate(60)
     no_stroke()
 
 def draw():

@@ -7,7 +7,7 @@
 #
 # This is the same as the Easing under input only with lerp() instead.
 
-from p5 import *
+from py5canvas import *
 
 x, y = 0, 0
 

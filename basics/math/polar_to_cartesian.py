@@ -8,7 +8,7 @@
 #     x = r * cos(theta)
 #     y = r * sin(theta)
 
-from p5 import *
+from py5canvas import *
 
 r = None
 

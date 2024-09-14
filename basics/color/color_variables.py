@@ -5,7 +5,7 @@
 # the program by a name, rather than a number.
 #
 
-from p5 import *
+from py5canvas import *
 
 bgcolor = Color(51, 0, 0)
 inside = Color(204, 102, 0)

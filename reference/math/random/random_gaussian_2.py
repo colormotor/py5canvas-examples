@@ -1,4 +1,4 @@
-from p5 import *
+from py5canvas import *
 
 distribution = [abs(random_gaussian()) * 54 for _ in range(360)]
 

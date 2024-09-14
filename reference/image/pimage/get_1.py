@@ -1,4 +1,4 @@
-from p5 import *
+from py5canvas import *
 lake = load_image('../lake-512.jpg')
 
 def setup():

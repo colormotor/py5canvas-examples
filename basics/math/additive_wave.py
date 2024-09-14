@@ -7,7 +7,7 @@
 # Create a more complex wave by adding two waves together.
 #
 
-from p5 import *
+from py5canvas import *
 
 # How far apart should each horizontal location be spaced.
 xspacing = 8

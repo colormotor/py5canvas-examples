@@ -1,7 +1,7 @@
-from p5 import *
+from py5canvas import *
 
 def setup():
-    size(360, 360)
+    size(500, 500)
     no_loop()
 
 def draw():
