@@ -45,35 +45,36 @@ def draw():
         square(cell * tile_size, 0.8 * tile_size)
 
     head = head + velocity
-    if head.x < 0:
-        head.x = tiles - 1
-    if head.x > tiles - 1:
-        head.x = 0
+    if head[0] < 0:
+        head[0] = tiles - 1
+    if head[0] > tiles - 1:
+        head[0] = 0
 
-    if head.y < 0:
-        head.y = tiles - 1
-    if head.y > tiles - 1:
-        head.y = 0
+    if head[1] < 0:
+        head[1] = tiles - 1
+    if head[1] > tiles - 1:
+        head[1] = 0
 
     # Pause and reset the game when the snake eats itself.
-    if head in tail:
-        tail_size = 5
-        tail = []
-        paused = True
+    for pos in tail:
+        if dist(pos, head) < 0.1:
+            tail_size = 5
+            tail = []
+            paused = True
 
-        fill(food_color.lerp(snake_color, 0.7))
-        square(head * tile_size, 0.8 * tile_size)
+            fill(lerp(food_color, snake_color, 0.7))
+            square(head * tile_size, 0.8 * tile_size)
 
     tail.append(head)
     if len(tail) > tail_size:
         extra_cells = len(tail) - tail_size
         tail = tail[extra_cells:]
 
-    if head == food:
-        fill(food_color.lerp(snake_color, 0.3))
+    if dist(head, food) < 0.1:
+        fill(lerp(food_color, snake_color, 0.3))
         square(head * tile_size, 0.8 * tile_size)
-        food.x = floor(random_uniform(0, tiles))
-        food.y = floor(random_uniform(0, tiles))
+        food[0] = floor(random_uniform(0, tiles))
+        food[1] = floor(random_uniform(0, tiles))
         tail_size += 1
 
     fill(food_color)
@@ -82,25 +83,25 @@ def draw():
     if paused:
         background(pause_overlay_color)
 
-def key_pressed(event):
+def key_pressed(key):
     global paused
     global velocity
 
-    if event.key in ['UP', 'DOWN', 'RIGHT', 'LEFT', 'H', 'J', 'K', 'L']:
+    if key in ['UP', 'DOWN', 'RIGHT', 'LEFT', 'h', 'j', 'k', 'l']:
         paused = False
-        if event.key == 'UP' or event.key == 'K':
-            velocity.x = 0
-            velocity.y = -1
-        elif event.key == 'DOWN' or event.key == 'J':
-            velocity.x = 0
-            velocity.y = 1
-        elif event.key == 'RIGHT' or event.key == 'L':
-            velocity.x = 1
-            velocity.y = 0
-        elif event.key == 'LEFT' or event.key == 'H':
-            velocity.x = -1
-            velocity.y = 0
-    elif event.key == 'SPACE':
+        if key == 'UP' or key == 'k':
+            velocity[0] = 0
+            velocity[1] = -1
+        elif key == 'DOWN' or key == 'j':
+            velocity[0] = 0
+            velocity[1] = 1
+        elif key == 'RIGHT' or key == 'l':
+            velocity[0] = 1
+            velocity[1] = 0
+        elif key == 'LEFT' or key == 'h':
+            velocity[0] = -1
+            velocity[1] = 0
+    elif key == ' ':
         paused = not paused
         if paused:
             # Hide the food before drawing the overlay.

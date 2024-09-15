@@ -8,7 +8,7 @@ def draw():
     # Draw a white ellipse using 'CORNER' mode
     fill(255)
     ellipse_mode('CORNER')
-    ellipse((90, 90), 180, 180)
+    ellipse((90, 90), 220, 180)
 
     # Draw a white ellipse using 'CORNERS' mode
     fill(100)

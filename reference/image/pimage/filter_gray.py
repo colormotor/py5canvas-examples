@@ -8,8 +8,8 @@ def setup():
     no_loop()
 
 def draw():
-    img2.filter('gray')
-
+    
+    img2 = img2.convert('L')
     image(img1, (0, 0))
     image(img2, (width / 2, 0))
 

@@ -19,9 +19,9 @@ def draw():
 
     circle((mouse_x, mouse_y), circle_size)
 
-def key_pressed(event):
+def key_pressed(key):
     global recording
-    if event.key == 'SPACE':
+    if key == 'SPACE':
         recording = not recording
     background(204)
 

@@ -1,19 +1,22 @@
 from py5canvas import *
 
-soyuz = load_image('../soyuz-256.jpg')
+img = load_image('../soyuz-256.jpg')
 
 def setup():
-    size(*soyuz.size)
+    size(*img.size)
     no_loop()
 
 def draw():
     white = Color(255, 255, 255)
-    for px in range(16, width, 16):
-        for py in range(16, height, 16):
-            soyuz[px, py] = white
-
-    image(soyuz, (0, 0))
-    soyuz.save("soy.png")
+    # Convert to array to maniuplate
+    pixels = to_array(img)
+    for px in range(16, width-1, 16):
+        for py in range(16, height-1, 16):
+            pixels[py, px] = white
+    # We can visualize the pixels directly
+    # but to convert them back to an image we could do
+    # img2 = to_image(pixels) 
+    image(pixels, (0, 0))
 
 if __name__ == '__main__':
     run()

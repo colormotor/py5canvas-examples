@@ -22,6 +22,7 @@ def pie_chart(diameter, data):
     for i, d in enumerate(data):
         gray = remap(i, (0, len(data)), (0, 255))
         fill(gray)
+        stroke(0)
         arc((width / 2, height / 2), diameter, diameter, last_angle,
             last_angle + radians(d))
         last_angle += radians(d)

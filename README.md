@@ -1,8 +1,8 @@
-p5 examples
-===========
+# py5canvas examples
+This repository contains example sketches for [py5canvas](https://github.com/colormotor/py5canvas). 
+The code and this document are mostly adapted from the examples of [p5py](https://p5py.github.io/), with some small modifications.
 
-This repository contains example code for `p5
-<https://p5py.github.io/>`_. All examples are sorted in folders as
+Examples are sorted in folders as
 follows:
 
 - `basics` -- ported examples from "Basic" Processing examples.

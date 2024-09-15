@@ -9,8 +9,8 @@ def setup():
 def draw():
     image(img, (0, 0))
 
-    img.size = (64, 64)
-    image(img, (0, 0))
+    img2 = img.resize((64, 64))
+    image(img2, (0, 0))
 
 if __name__ == '__main__':
     run()

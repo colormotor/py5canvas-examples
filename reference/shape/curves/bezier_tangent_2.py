@@ -8,7 +8,8 @@ end = (54, 288)
 def setup():
     size(360, 360)
     no_loop()
-
+    no_fill()
+    
 def draw():
     bezier(start, control_1, control_2, end)
 
@@ -25,8 +26,8 @@ def draw():
         tangent = bezier_tangent(start, control_1, control_2, end, t)
 
         # Calculate an angle from the tangent points
-        a = atan2(tangent.y, tangent.x) - HALF_PI
-        tpoint = 28 * cos(a) + bpoint.x, 28 * sin(a) + bpoint.y
+        a = atan2(tangent[1], tangent[0]) - HALF_PI
+        tpoint = 28 * cos(a) + bpoint[0], 28 * sin(a) + bpoint[1]
 
         line(bpoint, tpoint)
 
