@@ -1,0 +1,22 @@
+{
+    "params": {
+        "width": 100.0,
+        "height": 100.0,
+        "color": [
+            164.8096963763237,
+            126.17648541927338,
+            220.00000208616257
+        ],
+        "hue": 0.0,
+        "show": true,
+        "other": {
+            "a_text": "Hello World",
+            "selection": 1,
+            "a_real_number": 0.0,
+            "an_integer": 0,
+            "int_slider": 0
+        }
+    },
+    "presets": {},
+    "aux": {}
+}
