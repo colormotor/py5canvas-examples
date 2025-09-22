@@ -28,5 +28,4 @@ def draw():
         rect((bar_x, 0), bar_width, height)
         last_bar = which_bar
 
-if __name__ == '__main__':
-    run()
+run()

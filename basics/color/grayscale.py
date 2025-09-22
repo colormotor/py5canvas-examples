@@ -34,25 +34,19 @@ def draw():
         fill(np.mean(band_color)) #.gray)
         rect((band_location, height/2), width/lerp_bands, height/2)
 
-def key_pressed(event):
+def key_pressed(key):
     global lerp_bands
-    print(event)
-    import pdb
-    pdb.set_trace()
-    # if event.key == 's':
-    #     start_color.r = random_uniform(0, 255)
-    #     start_color.g = random_uniform(0, 255)
-    #     start_color.b = random_uniform(0, 255)
+    if key == 's':
+        start_color[0] = random_uniform(0, 255)
+        start_color[1] = random_uniform(0, 255)
+        start_color[2] = random_uniform(0, 255)
+    elif key == 'e':
+        end_color[0] = random_uniform(0, 255)
+        end_color[1] = random_uniform(0, 255)
+        end_color[2] = random_uniform(0, 255)
+    elif key == 'UP':
+        lerp_bands = constrain(lerp_bands + 1, 3, 100)
+    elif key == 'DOWN':
+        lerp_bands = constrain(lerp_bands - 1, 3, 100)
 
-    # elif event.key == 'e':
-    #     end_color.r = random_uniform(0, 255)
-    #     end_color.g = random_uniform(0, 255)
-    #     end_color.b = random_uniform(0, 255)
-
-    # elif event.key == 'UP':
-    #     lerp_bands = constrain(lerp_bands + 1, 3, 100)
-    # elif event.key == 'DOWN':
-    #     lerp_bands = constrain(lerp_bands - 1, 3, 100)
-
-if __name__ == '__main__':
-    run()
+run()

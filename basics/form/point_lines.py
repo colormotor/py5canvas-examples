@@ -17,6 +17,7 @@ p4 = p3 + d
 def setup():
     size(640, 360)
     no_loop()
+    stroke_weight(1)
 
 def draw():
     background(0)

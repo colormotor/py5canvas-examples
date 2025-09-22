@@ -46,7 +46,7 @@ def setup():
         dx.append((TWO_PI / period) * xspacing)
 
 def draw():
-    background(0)
+    background((sin(frame_count*0.01)*0.5+0.5)*255)
     calculate_wave()
     render_wave()
 
@@ -79,5 +79,5 @@ def render_wave():
         location = x * xspacing, (height / 2) + yval
         circle(location, 16, mode='CENTER')
 
-if __name__ == '__main__':
-    run()
+
+run()
